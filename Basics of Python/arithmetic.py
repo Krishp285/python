@@ -98,3 +98,5 @@ print("Integer to float:", float(a))  # 10.0
 print("Float to integer:", int(b))  # 5
 print("String to integer:", int("123"))  # 123
 print("String to float:", float("123.45"))  # 123.45
+
+
