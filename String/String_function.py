@@ -4,7 +4,7 @@ s = "Hello this is python programming"
 # 1. len() - Returns the length of the string.
 
 length = len(s)
-print("Length of the string:", length) # This will output: 30
+print("Length of the string:", length) # This will output: 32
 
 # 2. str() - Converts an object to a string.
 string_representation = str(123)

@@ -6,3 +6,4 @@ string1 = 'Hello, World!'
 string2 = "Python is fun!"
 string3 = '''This is a multi-line string. 
 It can span multiple lines.'''
+
