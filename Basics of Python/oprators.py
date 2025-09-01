@@ -50,13 +50,14 @@ print("Logical NOT:", not (a > 5))      # False
 
 # 5) Bitwise Operators
 
-print("Bitwise AND:", a & b)            # 0
-print("Bitwise OR:", a | b)             # 3
-print("Bitwise XOR:", a ^ b)            # 3
-print("Bitwise NOT:", ~a)               # -101
-print("Bitwise Left Shift:", a << 1)    # 200
-print("Bitwise Right Shift:", a >> 1)   # 50
-
+c = 10
+d = 5
+print("Bitwise AND:", c & d)          # 0
+print("Bitwise OR:", c | d)           # 15
+print("Bitwise XOR:", c ^ d)          # 15
+print("Bitwise NOT:", ~c)             # -11
+print("Left Shift:", c << 1)          # 20
+print("Right Shift:", c >> 1)         # 5
 
 # 6) Identity Operators
 
@@ -84,19 +85,8 @@ y = 10
 result = "x is greater" if x > y else "y is greater"
 print("Ternary result:", result)  # "y is greater"
 
-# 10) Membership Operators
-list2 = [1, 2, 3, 4, 5]
-print("Membership in list2:", 3 in list2)  # True
-print("Membership not in list2:", 6 not in list2)  # True
-print("Membership in string:", 'a' in "apple")  # True
-
-
-# 11) Type Casting
-a = 10
-b = 5.5
-print("Integer to float:", float(a))  # 10.0
-print("Float to integer:", int(b))  # 5
-print("String to integer:", int("123"))  # 123
-print("String to float:", float("123.45"))  # 123.45
-
+# 10) Augmented Assignment Operators
+a = 5
+a += 3
+print("After += :", a)  # 8 
 
