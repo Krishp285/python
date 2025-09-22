@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Architecture Diagram (Horizontal)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="mermaid">
+        graph LR;
+        
+            %% -- Component Definitions (Semicolons removed from style attribute) --
+            A["<div style='padding: 10px'>
+                <i class='fa-solid fa-satellite-dish fa-2x'></i><br>
+                <b>Data Sources</b><br>
+                <small>Drones, IoT, and mobile apps<br>collect field data</small>
+            </div>"]
+            
+            B["<div style='padding: 10px'>
+                <i class='fa-solid fa-mobile-screen-button fa-2x'></i><br>
+                <b>Front-End</b><br>
+                <small>Mobile app for NGOs and<br>communities to upload data</small>
+            </div>"]
+
+            C["<div style='padding: 10px'>
+                <i class='fa-brands fa-ethereum fa-2x'></i><br>
+                <b>Blockchain Layer</b><br>
+                <small>Smart contracts for data validation<br>and credit tokenization</small>
+            </div>"]
+
+            D["<div style='padding: 10px'>
+                <i class='fa-solid fa-cloud-arrow-up fa-2x'></i><br>
+                <b>Storage Layer</b><br>
+                <small>Decentralized storage (IPFS)<br>for immutable records</small>
+            </div>"]
+
+            E["<div style='padding: 10px'>
+                <i class='fa-solid fa-chart-pie fa-2x'></i><br>
+                <b>Admin Tools</b><br>
+                <small>NCCR dashboard for monitoring,<br>reporting, and management</small>
+            </div>"]
+            
+            F["<div style='padding: 10px'>
+                <i class='fa-solid fa-users fa-2x'></i><br>
+                <b>External Stakeholders</b><br>
+                <small>Investors/regulators accessing<br>tokenized carbon credits</small>
+            </div>"]
+
+            %% -- Connections between components --
+            A -- "Data Upload" --> B;
+            B -- "Data Validation" --> C;
+            C -- "Immutable Storage" --> D;
+            C -- "Reporting & Analytics" --> E;
+            E <--> F;
+
+            %% -- Styling with specified colors --
+            classDef green fill:#4BC0C0,stroke:#333,stroke-width:2px,color:#fff;
+            classDef blue fill:#36A2EB,stroke:#333,stroke-width:2px,color:#fff;
+            classDef yellow fill:#FFCE56,stroke:#333,stroke-width:2px,color:#333;
+            classDef gray fill:#D1D5DB,stroke:#333,stroke-width:2px,color:#333;
+            classDef lightblue fill:#60A5FA,stroke:#333,stroke-width:2px,color:#fff;
+            classDef purple fill:#9966FF,stroke:#333,stroke-width:2px,color:#fff;
+
+            class A green;
+            class B blue;
+            class C yellow;
+            class D gray;
+            class E lightblue;
+            class F purple;
+    </div>
+
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</body>
+</html>

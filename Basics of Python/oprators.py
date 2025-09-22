@@ -85,8 +85,3 @@ y = 10
 result = "x is greater" if x > y else "y is greater"
 print("Ternary result:", result)  # "y is greater"
 
-# 10) Augmented Assignment Operators
-a = 5
-a += 3
-print("After += :", a)  # 8 
-
