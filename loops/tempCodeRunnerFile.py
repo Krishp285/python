@@ -1,7 +1,4 @@
-for i in range(5,0,-1):
-    for j in range(i):
-        if(i==1 or i==5 or j==1 or j == i-1):
-            print("*",end=" ")
-        else :
-            print(" ",end=" ")
+for i in range(1,6):
+    for j in range(i,6):
+        print(j,end="")
     print()

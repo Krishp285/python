@@ -185,4 +185,81 @@
 #         print("min:-", value)
 
 d = {"krish": [10, 20, 30, 40], "patel": [20, 30, 40, 50], "hello": [30, 40, 50, 60] , "hi": [100,200,300]}
-print(d.popitem())
+print(d.popitem()) # remove last item
+print(d.pop("krish")) # remove specific item
+
+
+
+
+
+s = "I like Java Java like"
+print(s.count("like",2,3))  # 1
+print(s.find("like",2))   # 7
+print(s.replace("Java", "Python",1))  
+print(s[1:4])
+print(s.rindex("like"))  #17
+print(s.rfind("like"))   # 17
+l = [1,2,3,4,5]
+print(l[::-1]) 
+print(l[-1:-6])
+
+demolist = ["Spiderman", "John Wick", "batman", "Iron Man", "Wonder Woman", "Thor","Black Widow", "Captain America"]
+demolist[5:6] = ["Loki", "Superman", "Deadpool"]
+print(demolist)
+del demolist
+print(demolist)  # NameError: name 'demolist' is not defined
+
+d = {'a':1, 'b':2, 'c':3}
+print(d.fromkeys('xyz', 0))  # {'x': 0, 'y': 0, 'z': 0}
+print('a' in d)  # True
+print('z' in d)  # False
+
+t = (1, 2, 2, 3,2,3,4)
+print(t.count(2 , 2))   # 2
+print(t.index(3,4))   # 5
+
+print(list(enumerate((1,2,3),start=1)))  # [(0, 1), (1, 2), (2, 3)]
+
+names = ["Krish", "Raj", "Neha"]
+ages = [21, 22, 20]
+
+zipped = zip(names, ages)
+print(zipped) # <zip object at 0x0000021C3B2B8C80>
+
+
+
+
+s = {0,1,2,31,4,5}
+print(sorted(s))
+
+
+print(list(range(5))) # [0, 1, 2, 3, 4]
+
+x=3
+match x:
+    case 1: print("one")
+    case 2: print("two")
+    case 3: print("three")
+    case _: print("other")  # wildcard case
+
+
+
+#Given a list of strings, use a lambda function with filter() to return only the strings that start with a vowel (a, e, i, o, u).
+strings = ["apple", "banana", "orange", "grape", "umbrella", "kiwi"]
+vowel_strings = list(filter(lambda s: s[0].lower() in 'aeiou', strings))
+print(vowel_strings)  # Output: ['apple', 'orange', 'umbrella']
+
+l = [5, 2, 3, 1, 4]
+l.sort(key = lambda x: x % 2)  # Sort by even/odd
+print(l)  # Output: [1, 3, 5, 2, 4]
+
+l = [1,2,3,4,5]
+print(l[-3:-1])  # [3, 4]
+print(l[-1:-3:-1])  # [5, 4]
+print(l[::-2])  # [5, 3, 1]
+
+
+import numpy as np
+
+arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(arr[1:-1,1:-1])   # [[5]]

@@ -67,3 +67,8 @@ print(l) # [1, 2, 4, 5]
 # 10. reverse(): Reverses the order of the elements in the list.
 l.reverse()
 print(l) # [5, 4, 2, 1]
+
+
+
+l = list([3,1,4,2,5])
+print(l) # [3, 1, 4, 2, 5]

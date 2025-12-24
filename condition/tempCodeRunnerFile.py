@@ -1,6 +1,6 @@
-number = int(input("Enter a number: "))
-a, b = 0, 1
-print("Fibonacci series:")
-while a <= number:
-    print(a)
-    a, b = b, a + b
+list1 = [1, 2, 3, 4, 5]
+list2 = list1
+if list1 is list2:
+    print("The lists are equal.")
+else:
+    print("The lists are not equal.")

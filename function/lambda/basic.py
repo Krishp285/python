@@ -37,3 +37,4 @@ print(sum) # 55
 
 # ans = list(filter(lambda x : x[0] in ('a','e','i','o','u'), l))
 # print(ans) # ['apple']
+

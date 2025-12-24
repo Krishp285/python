@@ -49,11 +49,10 @@ for i in range(1, 6):
     # 54
     # 5
 
-    for i in range(5, 0, -1):
-        for j in range(1, i + 1):
-            print(6 - j, end="")
+    for i in range(1,6):
+        for j in range(5,i-1,-1):
+            print(j,end="")
         print()
-
 # Pattern 6
     # 12345
     # 2345
@@ -73,13 +72,15 @@ for i in range(1,6):
     #    **
     #     *
 
-for i in range(5, 0, -1):
-    print(" " * (5 - i) + "*" * i)
+for i in range(1,6):
+    print(" " * (i - 1), end="")
+    for j in range(6 - i):
+        print("*", end="")
+    print()
 
 # Pattern 8 
     # * * * * *
     #  * * * *
-    #   * * *
     #    * *
     #     *
 
