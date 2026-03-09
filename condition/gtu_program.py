@@ -395,7 +395,7 @@ s = "krish patel"
 for i in range(len(s)-1,-1,-1):
     print(s[i], end='') 
 
-# happy number 
+# happy number- a number which eventually reaches 1 when replaced by the sum of the square of each digit. If it loops endlessly in a cycle that does not include 1, it is not a happy number.
 number = int(input("Enter a number: "))
 temp = number
 
